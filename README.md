@@ -91,6 +91,7 @@ DaisyUI has been used for both components and for the themes built in with Daisy
 https://daisyui.com/
 
 It is super simple to get started with themes within the boilerplate. Daisy UI themes are based of Tailwind CSS config. Within tailwind.config.js you will find all of the DaisyUI themes. Simply uncomment the one you want to use and comment all others. The file also contains some commented out examples of completelly custom colour themes should you decide you want more optionality.
+
 ![image](https://github.com/RobertWatkin/laravel-vue-saas-boilerplate/assets/55134916/7677810b-e79a-4265-b9d8-e18a9351a1a4)
 ![image](https://github.com/RobertWatkin/laravel-vue-saas-boilerplate/assets/55134916/1bbb74d4-4ef2-4fa3-a9e9-48eca36dda2c)
 
