@@ -77,7 +77,7 @@ const showAnnualSubscriptions = ref(0);
                     </ul>
 
                     <!-- Start Now Button -->
-                    <a :href="'/checkout/subscription/' + (showAnnualSubscriptions ? priceTier.yearly.stripe_id : priceTier.monthly.stripe_id)" class="btn btn-primary w-full mt-auto">
+                    <a :href="'/checkout/subscription/' + (showAnnualSubscriptions ? priceTier.yearly.stripe_id : priceTier.monthly.stripe_id)" class="btn btn-primary text-primary-content w-full mt-auto">
                         Start Now
                     </a>
                 </div>

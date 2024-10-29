@@ -5,8 +5,8 @@
     <div class="max-w-7xl mx-auto px-5">
 
         <div class="text-center" v-motion-pop-visible>
-            <h2 class="font-display text-3xl tracking-tight sm:text-4xl">Features you'll love</h2>
-            <p class="max-w-md mx-auto mt-2 text-gray-500">A responsive documentation template built for everyone who wants
+            <h2 class="font-display text-3xl tracking-tight sm:text-4xl">Features you'll <span class="font-bold text-transparent bg-clip-text w-24 h-12 bg-gradient-to-r from-primary to-secondary">LOVE</span></h2>
+            <p class="max-w-md mx-auto mt-2">A responsive documentation template built for everyone who wants
                 to create a plugin.</p>
         </div>
 
@@ -24,7 +24,7 @@
                     </svg></span>
                 <div>
                     <h3 class="font-semibold text-xl">Customizable</h3>
-                    <p class="mt-1 text-gray-500"> You don't need to be an expert to customize this boilerplate.</p>
+                    <p class="mt-1"> You don't need to be an expert to customize this boilerplate.</p>
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
                     </svg></span>
                 <div>
                     <h3 class="font-semibold text-xl">Fully Responsive</h3>
-                    <p class="mt-1 text-gray-500"> With mobile, tablet &amp; desktop support it doesn't matter what device
+                    <p class="mt-1"> With mobile, tablet &amp; desktop support it doesn't matter what device
                         you're using. This boilerplate is responsive in all browsers. </p>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     </svg></span>
                 <div>
                     <h3 class="font-semibold text-xl">For Developers</h3>
-                    <p class="mt-1 text-gray-500">My boilerplate is built with developers in mind. With useful
+                    <p class="mt-1">My boilerplate is built with developers in mind. With useful
                         documentation.</p>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     </svg></span>
                 <div>
                     <h3 class="font-semibold text-xl">Cross Browser</h3>
-                    <p class="mt-1 text-gray-500"> We make sure my plugins are working perfectly with all modern browsers
+                    <p class="mt-1"> We make sure my plugins are working perfectly with all modern browsers
                         available such as Chrome, Firefox, Safari. </p>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     </svg></span>
                 <div>
                     <h3 class="font-semibold text-xl">Save Hours</h3>
-                    <p class="mt-1 text-gray-500"> Save hours of developing and use a boilerplate that is already
+                    <p class="mt-1"> Save hours of developing and use a boilerplate that is already
                         responsive, fast and easy to work with. </p>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     </svg></span>
                 <div>
                     <h3 class="font-semibold text-xl">Well Maintained</h3>
-                    <p class="mt-1 text-gray-500"> Purchase once and receive updates for life with this boilerplate. I am
+                    <p class="mt-1"> Purchase once and receive updates for life with this boilerplate. I am
                         always improving and adding new features. </p>
                 </div>
             </div>

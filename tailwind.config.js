@@ -11,7 +11,7 @@ export default {
             // "dark", 
             // "cupcake",
             // "bumblebee",
-            "emerald",
+            // "emerald",
             // "corporate",
             // "lofi",
             // "synthwave",
@@ -43,28 +43,16 @@ export default {
 
             {
                 // CUSTOM THEMES
-                // mytheme: {
-                //     "primary": "#7900ff",
-                //     "secondary": "#3f00ff",
-                //     "accent": "#00dc84",
-                //     "neutral": "#12283e",
-                //     "base-100": "#fff7f6",
-                //     "info": "#00f1ff",
-                //     "success": "#00f6cb",
-                //     "warning": "#d39200",
-                //     "error": "#ff7386",
-                // },
-                // mytheme: {
-                //     "primary": "#ff00cf",
-                //     "secondary": "#00e930",
-                //     "accent": "#ff8300",
-                //     "neutral": "#001016",
-                //     "base-100": "#fff7f6",
-                //     "info": "#0070e1",
-                //     "success": "#00d18b",
-                //     "warning": "#cb6b00",
-                //     "error": "#e92d4e",
-                // },
+                realtimeColorsTheme: {
+                    "primary": "#d8ed8d",
+                    "primary-content": "#090b03",
+                    "secondary": "#7e9d0e",
+                    "secondary-content": "#090b03",
+                    "accent": "#c7f90e",
+                    "accent-content": "#090b03",
+                    "neutral": "#313c10",
+                    "base-100": "#090b03",
+                },
             },
 
         ]
