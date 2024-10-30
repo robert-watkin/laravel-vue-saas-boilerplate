@@ -13,7 +13,7 @@ const showAnnualSubscriptions = ref(0);
 <template>
     <section id="pricing" class="leading-7 bg-base-200 min-h-screen">
         <div class="box-border px-4 mx-auto max-w-7xl">
-            <div class="flex flex-col items-center leading-7 text-center py-12" v-motion-pop-visible>
+            <div class="flex flex-col items-center leading-7 text-center py-12">
                 <h2 class="font-display text-3xl tracking-tight sm:text-4xl">
                     Simple, Transparent Pricing
                 </h2>
@@ -33,7 +33,7 @@ const showAnnualSubscriptions = ref(0);
             </div>
             <!-- pricing row -->
             <div class="flex flex-col items-center justify-center w-full space-y-4 md:space-y-0 md:space-x-4 md:flex-row">
-                <div v-for="priceTier in pricingTier" v-motion-pop-visible
+                <div v-for="priceTier in pricingTier"
                     class="flex flex-col relative w-full max-w-xl bg-base-300 items-center text-center p-4 border-2 rounded-xl"
                     :class="priceTier.mostPopular ? 'border-primary' : null">
                     <div v-if="priceTier.mostPopular"
