@@ -4,7 +4,8 @@ Hi, I have created this boilerplate for Laravel and Vue to increase the speed in
 
 This boilerplate is based of the Jetstream starter kit so you get all the benefits provided such as a profile screen, session management, 2FA, etc.
 
-![image](https://github.com/RobertWatkin/laravel-vue-saas-boilerplate/assets/55134916/cc036e6e-6775-42aa-a0d6-c6cc5d7d3725)
+![image](https://github.com/user-attachments/assets/b61e2b20-5ec7-4e21-bd14-2823a21e515a)
+
 
 ### Technologies Used
 - Laravel
@@ -85,15 +86,42 @@ Welcome.vue is the landing page for the application. The landing page is made up
 ![image](https://github.com/RobertWatkin/laravel-vue-saas-boilerplate/assets/55134916/d2c52cfb-a5c0-464c-9e62-bcddce645944)
 
 
-## DaisyUI (Themes)
+## Realtime Colors
+![saas-boilerplate](https://github.com/user-attachments/assets/53c93b58-46d0-42c7-93de-587a8a87ee97)
 
-DaisyUI has been used for both components and for the themes built in with DaisyUI. See the full documentation for Daisy UI below:
+To create your own color scheme I recommend the use of www.realtimecolors.com/
+Create a colour scheme you like and then export the colour scheme with the custom export code below
+```
+daisyui: {
+    themes: [
+      {
+        realtimeColorsTheme: {
+          "primary": "${primary.hex}",
+          "primary-content": "${primaryFg.hex}",
+          "secondary": "${secondary.hex}",
+          "secondary-content": "${secondaryFg.hex}",
+          "accent": "${accent.hex}",
+          "accent-content": "${accentFg.hex}",
+          "neutral": "${bg.hex.15}",
+          "base-100": "${bg.hex}",
+        },
+      },
+    ],
+  },
+```
+
+You can then paste the exported theme into your tailwind.config.js file as seen below:
+![image](https://github.com/user-attachments/assets/bc816c50-183e-4e59-b362-d3a7facbac3d)
+
+
+#### DaisyUI Themes
+See the full documentation for Daisy UI below:
 https://daisyui.com/
 
-It is super simple to get started with themes within the boilerplate. Daisy UI themes are based of Tailwind CSS config. Within tailwind.config.js you will find all of the DaisyUI themes. Simply uncomment the one you want to use and comment all others. The file also contains some commented out examples of completelly custom colour themes should you decide you want more optionality.
+If you don't want to create your own color schemes, it is super simple to get started with themes within the boilerplate. Daisy UI themes are based on Tailwind CSS config. Within tailwind.config.js you will find all of the DaisyUI themes. Simply uncomment the one you want to use and comment all others. The file also contains some commented out examples of completelly custom colour themes should you decide you want more optionality.
 
 ![image](https://github.com/RobertWatkin/laravel-vue-saas-boilerplate/assets/55134916/7677810b-e79a-4265-b9d8-e18a9351a1a4)
-![image](https://github.com/RobertWatkin/laravel-vue-saas-boilerplate/assets/55134916/1bbb74d4-4ef2-4fa3-a9e9-48eca36dda2c)
+
 
 
 ## Animations
