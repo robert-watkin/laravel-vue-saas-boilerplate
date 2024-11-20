@@ -2,10 +2,10 @@
 </script>
 
 <template>
-    <div class="max-w-7xl mx-auto px-5">
+    <div class="max-w-7xl mx-auto px-5 pt-28">
 
         <div class="text-center" v-motion-pop-visible>
-            <h2 class="font-display text-3xl tracking-tight sm:text-4xl">Features you'll <span class="font-bold text-transparent bg-clip-text w-24 h-12 bg-gradient-to-r from-primary to-secondary">LOVE</span></h2>
+            <h2 class="font-display text-3xl tracking-tight sm:text-4xl">Features you'll <span class="font-bold text-transparent bg-clip-text w-24 h-12 bg-gradient-to-r from-primary to-accent">LOVE</span></h2>
             <p class="max-w-md mx-auto mt-2">A responsive documentation template built for everyone who wants
                 to create a plugin.</p>
         </div>
@@ -15,7 +15,7 @@
 
 
             <div class="flex gap-4 items-start" v-motion-pop-visible>
-                <span class="text-accent bg-violet-500/10 p-3 rounded-full">
+                <span class="bg-secondary text-secondary-content p-4 rounded-full">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="w-5 h-5">
                         <path
@@ -30,7 +30,7 @@
 
 
             <div class="flex gap-4 items-start" v-motion-pop-visible>
-                <span class="text-accent bg-violet-500/10 p-3 rounded-full">
+                <span class="bg-secondary text-secondary-content p-3 rounded-full">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="w-5 h-5">
                         <path
@@ -46,7 +46,7 @@
 
 
             <div class="flex gap-4 items-start" v-motion-pop-visible>
-                <span class="text-accent bg-violet-500/10 p-3 rounded-full">
+                <span class="bg-secondary text-secondary-content p-3 rounded-full">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="w-5 h-5">
                         <path
@@ -62,7 +62,7 @@
 
 
             <div class="flex gap-4 items-start" v-motion-pop-visible>
-                <span class="text-accent bg-violet-500/10 p-3 rounded-full">
+                <span class="bg-secondary text-secondary-content p-3 rounded-full">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="w-5 h-5">
                         <path
@@ -71,14 +71,14 @@
                     </svg></span>
                 <div>
                     <h3 class="font-semibold text-xl">Cross Browser</h3>
-                    <p class="mt-1"> We make sure my plugins are working perfectly with all modern browsers
-                        available such as Chrome, Firefox, Safari. </p>
+                    <p class="mt-1">This boilerplate design looks consistent across devices and browsers such as
+                        Chrome, Firefox, Safari. </p>
                 </div>
             </div>
 
 
             <div class="flex gap-4 items-start" v-motion-pop-visible>
-                <span class="text-accent bg-violet-500/10 p-3 rounded-full">
+                <span class="bg-secondary text-secondary-content p-3 rounded-full">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="w-5 h-5">
                         <path
@@ -94,7 +94,7 @@
 
 
             <div class="flex gap-4 items-start" v-motion-pop-visible>
-                <span class="text-accent bg-violet-500/10 p-3 rounded-full">
+                <span class="bg-secondary text-secondary-content p-3 rounded-full">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="w-5 h-5">
                         <path
@@ -103,7 +103,7 @@
                     </svg></span>
                 <div>
                     <h3 class="font-semibold text-xl">Well Maintained</h3>
-                    <p class="mt-1"> Purchase once and receive updates for life with this boilerplate. I am
+                    <p class="mt-1">Semi-regular updates to ensure the boilerplate is always up to date. I am
                         always improving and adding new features. </p>
                 </div>
             </div>

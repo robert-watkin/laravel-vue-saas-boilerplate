@@ -44,14 +44,14 @@ export default {
             {
                 // CUSTOM THEMES
                 realtimeColorsTheme: {
-                    "primary": "#d8ed8d",
-                    "primary-content": "#090b03",
-                    "secondary": "#7e9d0e",
-                    "secondary-content": "#090b03",
-                    "accent": "#c7f90e",
-                    "accent-content": "#090b03",
-                    "neutral": "#313c10",
-                    "base-100": "#090b03",
+                    "primary": "#2957de",
+                    "primary-content": "#eff3fc",
+                    "secondary": "#ed8ed2",
+                    "secondary-content": "#02050e",
+                    "accent": "#e45373",
+                    "accent-content": "#02050e",
+                    "neutral": "#0c1c40",
+                    "base-100": "#eff3fc",
                 },
             },
 
@@ -70,6 +70,10 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                "primary-20": "oklch(var(--p) / 0.2)",
+                "secondary-20": "oklch(var(--s) / 0.2)",
             },
         },
     },

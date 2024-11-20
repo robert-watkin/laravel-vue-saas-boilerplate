@@ -33,7 +33,7 @@ const questions = ref([
 </script>
 
 <template>
-    <div class="flex flex-col max-w-4xl mx-auto px-4 items-center leading-7 text-center">
+    <div class="flex flex-col max-w-4xl mx-auto px-4 py-12 items-center leading-7 text-center">
         <h2 id="pricing" class="font-display text-3xl tracking-tight sm:text-4xl" v-motion-pop-visible>
             FAQ
         </h2>
