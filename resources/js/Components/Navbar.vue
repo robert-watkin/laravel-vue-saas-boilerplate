@@ -17,10 +17,12 @@ const toggleMobileMenu = () => {
 <template>
     <nav class="w-screen bg-base-100 z-10">
         <div class="navbar max-w-7xl mx-auto bg-base-100 flex justify-between items-center">
-            <div class="flex items-center">
-                <ApplicationMark class="block h-9 w-auto" />
-                <a class="btn btn-ghost text-xl ml-2">{{ $page.props.appName }}</a>
-            </div>
+            <a href="/" class="btn btn-ghost normal-case text-xl">
+                <div class="flex items-center">
+                    <ApplicationMark class="block h-9 w-auto" />
+                    <p class="text-xl ml-2">{{ $page.props.appName }}</p>
+                </div>
+            </a>
             <div class="hidden md:flex">
                 <ul class="menu menu-horizontal px-1">
                     <li><a :href="route('welcome')">Home</a></li>
