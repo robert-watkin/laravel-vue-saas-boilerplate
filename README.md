@@ -192,6 +192,10 @@ Here you can set the names of your pricing tiers, match the prices up to the one
 You MUST ensure the stripe_id is set correctly for each of your pricing tiers or Stripe you won't be directed to the Stripe checkout as expected.
 When you think you have your config setup correctly, move onto the next step where you can test your Stripe setup is successful.
 
+#### Sending Email Receipts on Successful Subscriptions
+Please refer to the official Stripe documentation below:
+https://docs.stripe.com/payments/advanced/receipts#automatically-send-receipts
+
 ### Stripe Testing in Local Environment
 
 1. Activate customer portal for test mode
