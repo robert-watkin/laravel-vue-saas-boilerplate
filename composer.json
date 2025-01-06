@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "inertiajs/inertia-laravel": "^1.0",
+        "inertiajs/inertia-laravel": "^2.0",
         "laravel/cashier": "^15.3",
         "laravel/framework": "^11.0",
         "laravel/jetstream": "^5.0",
