@@ -113,7 +113,6 @@ daisyui: {
 You can then paste the exported theme into your tailwind.config.js file as seen below:
 ![image](https://github.com/user-attachments/assets/bc816c50-183e-4e59-b362-d3a7facbac3d)
 
-
 #### DaisyUI Themes
 See the full documentation for Daisy UI below:
 https://daisyui.com/
@@ -122,8 +121,6 @@ If you don't want to create your own color schemes, it is super simple to get st
 
 ![image](https://github.com/RobertWatkin/laravel-vue-saas-boilerplate/assets/55134916/7677810b-e79a-4265-b9d8-e18a9351a1a4)
 
-
-
 ## Animations
 
 The application also uses animations from @vueuse/motion. These can be seen on the landing page when sections of the page are scrolled to be in view.
@@ -131,7 +128,6 @@ https://motion.vueuse.org/
 
 See an example usage below taken from Feature.vue:
 ![image](https://github.com/RobertWatkin/laravel-vue-saas-boilerplate/assets/55134916/4d876cd6-fa97-410c-a628-ec9852998564)
-
 
 ## Setup Email (Mailgun)
 
