@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\Subscribed;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use App\Http\Controllers\StripeController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -31,20 +32,7 @@ Route::middleware([
             return Inertia::render('CheckoutCancel');
         })->name('checkout-cancel');
 
-        Route::get('subscription/{price_id}', function (Request $request, string $price_id) {
-            // return error if no price_id
-            if (!$price_id) {
-                return redirect()->route('dashboard');
-            }
-            return $request->user()
-                ->newSubscription('default', $price_id)
-                // ->trialDays(5)
-                // ->allowPromotionCodes()
-                ->checkout([
-                    'success_url' => route('checkout-success'),
-                    'cancel_url' => route('checkout-cancel'),
-                ]);
-        });
+        Route::get('subscription/{price_id}', [StripeController::class, 'checkout'])->name('subscription');
     });
 
 
