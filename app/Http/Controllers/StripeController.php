@@ -7,12 +7,14 @@ use Illuminate\Http\Request;
 class StripeController extends Controller
 {
     // checkout function
-    public function checkout(Request $request)
+    public function checkout(Request $request, string $price_id)
     {
-        // get the price_id from the request
-        $price_id = $request->input('price_id');
         // handle when it doesn't exist
         if (!$price_id) {
+            return redirect()->route('dashboard');
+        }
+        // handle when the user is already subscribed
+        if ($request->user()->subscribed()) {
             return redirect()->route('dashboard');
         }
 
