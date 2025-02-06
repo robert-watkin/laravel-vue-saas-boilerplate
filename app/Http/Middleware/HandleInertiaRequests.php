@@ -36,77 +36,24 @@ class HandleInertiaRequests extends Middleware
     public function share(Request $request): array
     {
         return array_merge(parent::share($request), [
+            'appName' => config('app.name'),
             // share subscription details
             'user' => fn() => $request->user() ? $request->user()->only('id', 'name', 'email') : null,
             'auth.user.subscription' => fn() => $request->user()?->subscribed() ? $request->user()->subscription('default') : null,
             // all subscription options
-            'subscriptionOptions' => [
-                [
-                    'title' => 'Starter',
-                    'monthly' => [
-                        'price' => '$1',
-                        'stripe_id' => '',
-                    ],
-                    'yearly' => [
-                        'price' => '$10',
-                        'stripe_id' => ''
-                    ],
-                    'mostPopular' => false,
-                    'features' => [
-                        '1 Website',
-                        'SSL (HTTPS)',
-                        'SiteFast Domain',
-                    ],
-                    'notFeatures' => [
-                        'SiteFast Branding Removal',
-                        'Google Analytics',
-                        'Email Integration',
-                    ]
-                ],
-                [
-                    'title' => 'Basic',
-                    'monthly' => [
-                        'price' => '$29',
-                        'stripe_id' => '',
-                    ],
-                    'yearly' => [
-                        'price' => '$249',
-                        'stripe_id' => ''
-                    ],
-                    'mostPopular' => true,
-                    'features' => [
-                        '15 Websites',
-                        'SSL (HTTPS)',
-                        'Custom Domain',
-                        'SiteFast Branding Removal',
-                    ],
-                    'notFeatures' => [
-                        'Google Analytics',
-                        'Email Integration',
-                    ]
-                ],
-                [
-                    'title' => 'Plus',
-                    'price' => '$49',
-                    'monthly' => [
-                        'price' => '$49',
-                        'stripe_id' => '',
-                    ],
-                    'yearly' => [
-                        'price' => '$389',
-                        'stripe_id' => ''
-                    ],
-                    'mostPopular' => false,
-                    'features' => [
-                        '50 Websites',
-                        'SSL (HTTPS)',
-                        'Custom Domain',
-                        'SiteFast Branding Removal',
-                        'Google Analytics',
-                        'Email Integration',
-                    ]
-                ]
-            ],
+            'subscriptionOptions' => collect(config('subscription.tiers'))
+                ->map(function ($tier) {
+                    return [
+                        'title' => $tier['name'],
+                        'monthly' => $tier['monthly'],
+                        'yearly' => $tier['yearly'],
+                        'mostPopular' => $tier['mostPopular'],
+                        'features' => $tier['features'],
+                        'notFeatures' => $tier['notFeatures'],
+                    ];
+                })
+                ->values()
+                ->all(),
         ]);
     }
 }
